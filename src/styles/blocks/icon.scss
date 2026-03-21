@@ -1,0 +1,20 @@
+.icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &--menu {
+    background-image: url('../images/icon-menu.svg');
+  }
+
+  &--close {
+    background-image: url('../images/icon-close.svg');
+  }
+
+  &--phone {
+    background-image: url('../images/icon-phone.svg');
+  }
+}

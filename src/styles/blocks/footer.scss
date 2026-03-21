@@ -1,0 +1,15 @@
+.footer {
+  height: 200px;
+  margin-top: 120px;
+  background-image: url('../images/footer-cyclists.jpg');
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $tablet-min-width) {
+    height: 480px;
+  }
+
+  @media (min-width: $desktop-min-width) {
+    height: 555px;
+  }
+}

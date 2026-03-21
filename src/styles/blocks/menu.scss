@@ -1,0 +1,31 @@
+.menu {
+  background-color: $menu-bg-color;
+  color: #1d1d1d;
+
+  &:target {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  &__nav {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__phone-number,
+  &__book-test-ride {
+    display: block;
+    margin-top: 32px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}

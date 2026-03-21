@@ -1,0 +1,32 @@
+.compare-bikes {
+  &__list {
+    display: grid;
+    gap: 40px;
+
+    @media (min-width: $desktop-min-width) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    display: block;
+    margin-bottom: 32px;
+  }
+
+  &__card-title {
+    margin-bottom: 8px;
+    font-size: 24px;
+  }
+
+  &__description {
+    margin-bottom: 16px;
+    color: $secondary-text-color;
+    line-height: 1.4;
+  }
+
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+  }
+}

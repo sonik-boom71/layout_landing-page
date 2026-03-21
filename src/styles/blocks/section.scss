@@ -1,0 +1,22 @@
+.section {
+  padding-top: 92px;
+
+  &__title {
+    margin-bottom: 48px;
+    font-size: 32px;
+    line-height: 1;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 48px;
+    }
+  }
+
+  &__content--about {
+    @include page-grid;
+  }
+
+  &__text {
+    color: $secondary-text-color;
+    line-height: 1.6;
+  }
+}

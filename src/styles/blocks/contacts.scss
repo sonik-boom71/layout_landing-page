@@ -1,0 +1,50 @@
+.contacts {
+  &__content {
+    display: grid;
+    gap: 48px;
+
+    @media (min-width: $desktop-min-width) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__form {
+    display: grid;
+    gap: 16px;
+  }
+
+  &__input,
+  &__textarea {
+    border: 0;
+    border-radius: 40px;
+    background-color: $input-bg-color;
+    color: $input-text-color;
+    padding-inline: 16px;
+  }
+
+  &__input {
+    height: 48px;
+  }
+
+  &__textarea {
+    height: 148px;
+    padding-top: 14px;
+    border-radius: 16px;
+    resize: none;
+  }
+
+  &__label {
+    margin-bottom: 8px;
+    color: #9fadc2;
+    font-size: 14px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+  }
+
+  &__value {
+    color: $main-text-color;
+    line-height: 1.4;
+  }
+}

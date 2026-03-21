@@ -1,0 +1,27 @@
+.header {
+  background-image: url('../images/hero-bike.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    min-height: calc(100vh - 64px);
+    padding-bottom: 88px;
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 700;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 64px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      font-size: 80px;
+    }
+  }
+}
