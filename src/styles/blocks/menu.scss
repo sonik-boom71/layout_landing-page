@@ -1,31 +1,77 @@
 .menu {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  overflow: auto;
   background-color: $menu-bg-color;
   color: #1d1d1d;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
 
   &:target {
     opacity: 1;
     pointer-events: all;
   }
 
+  .top-bar {
+    padding-top: 32px;
+    margin-bottom: 48px;
+  }
+
+  .top-bar__logo-image {
+    width: 87px;
+    height: auto;
+  }
+
+  .icon--close {
+    width: 16px;
+    height: 16px;
+  }
+
   &__nav {
-    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 32px;
+    margin: 0 0 40px;
   }
 
   &__link {
+    width: fit-content;
     font-size: 22px;
     font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
   }
 
-  &__phone-number,
-  &__book-test-ride {
+  &__phone-number {
     display: block;
-    margin-top: 32px;
+    width: fit-content;
+    margin-bottom: 16px;
     font-size: 16px;
     font-weight: 700;
+    line-height: 27px;
+    letter-spacing: 2px;
     text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  &__book-test-ride {
+    display: block;
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1d1d1d;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
   }
 }

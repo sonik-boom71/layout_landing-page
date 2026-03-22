@@ -6,10 +6,7 @@
   background-color: $page-bg-color;
 
   &__menu {
-    opacity: 0;
-    pointer-events: none;
     position: fixed;
     inset: 0;
-    transition: all 0.3s;
   }
 }

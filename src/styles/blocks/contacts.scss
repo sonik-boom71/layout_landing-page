@@ -1,10 +1,23 @@
 .contacts {
+  &__title {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
   &__content {
     display: grid;
-    gap: 48px;
+    row-gap: 48px;
+
+    @media (min-width: $tablet-min-width) {
+      grid-template-columns: 288px 240px;
+      justify-content: center;
+      column-gap: 24px;
+      align-items: start;
+    }
 
     @media (min-width: $desktop-min-width) {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 411px 324px;
+      column-gap: 24px;
     }
   }
 
@@ -15,11 +28,15 @@
 
   &__input,
   &__textarea {
-    border: 0;
+    width: 100%;
+    border: 1px solid transparent;
+    outline: none;
     border-radius: 40px;
     background-color: $input-bg-color;
     color: $input-text-color;
     padding-inline: 16px;
+    appearance: none;
+    transition: border-color 0.3s;
   }
 
   &__input {
@@ -33,18 +50,35 @@
     resize: none;
   }
 
-  &__label {
-    margin-bottom: 8px;
-    color: #9fadc2;
-    font-size: 14px;
+  &__input:focus,
+  &__textarea:focus {
+    border-color: #d5d7de;
+  }
+
+  &__button {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  &__info {
+    display: grid;
+    row-gap: 24px;
   }
 
   &__item {
-    margin-bottom: 24px;
+    margin: 0;
+  }
+
+  &__label {
+    margin: 0 0 8px;
+    color: #9fadc2;
+    font-size: 14px;
+    line-height: 20px;
   }
 
   &__value {
     color: $main-text-color;
     line-height: 1.4;
+    text-decoration: none;
   }
 }

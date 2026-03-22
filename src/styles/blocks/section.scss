@@ -1,10 +1,16 @@
 .section {
-  padding-top: 92px;
+  padding-top: 60px;
+
+  @media (min-width: $tablet-min-width) {
+    padding-top: 92px;
+  }
 
   &__title {
-    margin-bottom: 48px;
+    margin: 0 0 48px;
     font-size: 32px;
+    font-weight: 500;
     line-height: 1;
+    color: $main-text-color;
 
     @media (min-width: $tablet-min-width) {
       font-size: 48px;
@@ -12,11 +18,48 @@
   }
 
   &__content--about {
-    @include page-grid;
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    column-gap: 20px;
+    align-items: start;
+
+    @media (min-width: $tablet-min-width) {
+      grid-template-columns: 220px 280px;
+      column-gap: 24px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      grid-template-columns: 264px 410px;
+    }
+  }
+
+  &__title--about {
+    margin-bottom: 0;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+
+    @media (min-width: $tablet-min-width) {
+      font-size: 48px;
+    }
   }
 
   &__text {
     color: $secondary-text-color;
-    line-height: 1.6;
+    line-height: 1.4;
+  }
+
+  &__text--about {
+    max-width: 220px;
+    font-size: 12px;
+
+    @media (min-width: $tablet-min-width) {
+      max-width: 280px;
+      font-size: 16px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      max-width: 410px;
+    }
   }
 }
