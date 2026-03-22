@@ -1,9 +1,14 @@
 .page {
   scroll-behavior: smooth;
   min-width: 320px;
+  overflow-x: hidden;
   font-family: Arial, sans-serif;
   color: $main-text-color;
   background-color: $page-bg-color;
+
+  &:has(.page__menu:target) {
+    overflow: hidden;
+  }
 
   &__menu {
     position: fixed;

@@ -7,12 +7,14 @@
   &__content {
     display: grid;
     row-gap: 48px;
+    padding-inline: 4px;
 
     @media (min-width: $tablet-min-width) {
       grid-template-columns: 288px 240px;
       justify-content: center;
       column-gap: 24px;
       align-items: start;
+      padding-inline: 0;
     }
 
     @media (min-width: $desktop-min-width) {
@@ -55,6 +57,17 @@
     border-color: #d5d7de;
   }
 
+  &__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:focus,
+  &__textarea:-webkit-autofill,
+  &__textarea:-webkit-autofill:hover,
+  &__textarea:-webkit-autofill:focus {
+    -webkit-text-fill-color: $input-text-color;
+    -webkit-box-shadow: 0 0 0 1000px $input-bg-color inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
   &__button {
     width: 100%;
     margin-top: 16px;
@@ -80,5 +93,13 @@
     color: $main-text-color;
     line-height: 1.4;
     text-decoration: none;
+    transition:
+      color 0.3s,
+      text-decoration-color 0.3s;
+  }
+
+  &__value:hover {
+    color: #9fadc2;
+    text-decoration: underline;
   }
 }

@@ -14,6 +14,13 @@
     pointer-events: all;
   }
 
+  &__top {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $menu-bg-color;
+  }
+
   .top-bar {
     padding-top: 32px;
     margin-bottom: 48px;
@@ -46,6 +53,10 @@
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__phone-number {
@@ -59,6 +70,10 @@
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__book-test-ride {
@@ -73,5 +88,9 @@
     text-transform: uppercase;
     text-decoration: none;
     color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

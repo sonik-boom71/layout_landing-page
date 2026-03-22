@@ -20,12 +20,11 @@
 
   &__title {
     margin: 0;
-    max-width: 620px;
     font-size: 36px;
     font-weight: 700;
     line-height: 1;
     letter-spacing: -1.5px;
-    text-align: left;
+    text-align: center;
     color: $main-text-color;
 
     @media (min-width: $tablet-min-width) {
