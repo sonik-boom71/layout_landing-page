@@ -22,8 +22,13 @@
   }
 
   .top-bar {
-    padding-top: 32px;
-    margin-bottom: 48px;
+    padding-top: 16px;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet-min-width) {
+      padding-top: 24px;
+      margin-bottom: 48px;
+    }
   }
 
   .top-bar__logo-image {
