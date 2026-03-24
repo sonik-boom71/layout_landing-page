@@ -18,12 +18,13 @@
   }
 
   &__content--about {
-    display: grid;
-    grid-template-columns: 110px 1fr;
-    column-gap: 20px;
-    align-items: start;
+    // Mobile: stack for readability (title + text).
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 
     @media (min-width: $tablet-min-width) {
+      display: grid;
       grid-template-columns: 220px 280px;
       column-gap: 24px;
     }
@@ -47,15 +48,14 @@
   &__text {
     color: $secondary-text-color;
     line-height: 1.4;
+    font-size: 16px;
   }
 
   &__text--about {
-    max-width: 220px;
-    font-size: 12px;
+    max-width: none;
 
     @media (min-width: $tablet-min-width) {
       max-width: 280px;
-      font-size: 16px;
     }
 
     @media (min-width: $desktop-min-width) {

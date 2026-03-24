@@ -1,30 +1,28 @@
 .contacts {
   &__title {
+    margin-bottom: 32px;
     text-align: center;
-    margin-bottom: 48px;
   }
 
   &__content {
     display: grid;
-    row-gap: 48px;
-    padding-inline: 0;
+    gap: 32px;
 
     @media (min-width: $tablet-min-width) {
-      grid-template-columns: 300px 152px;
-      justify-content: center;
-      column-gap: 18px;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      column-gap: 48px;
       align-items: start;
-    }
 
-    @media (min-width: $desktop-min-width) {
-      grid-template-columns: 412px 152px;
-      column-gap: 18px;
+      @media (min-width: $desktop-min-width) {
+        grid-template-columns: 460px minmax(0, 1fr);
+        column-gap: 120px;
+      }
     }
   }
 
   &__form {
     display: grid;
-    gap: 16px;
+    gap: 12px;
   }
 
   &__input,
@@ -49,7 +47,7 @@
   }
 
   &__textarea {
-    height: 148px;
+    height: 120px;
     padding-top: 14px;
     border-radius: 16px;
     resize: none;
@@ -77,7 +75,7 @@
 
   &__button {
     width: 100%;
-    margin-top: 16px;
+    margin-top: 4px;
   }
 
   &__info {
@@ -90,15 +88,16 @@
   }
 
   &__label {
-    margin: 0 0 8px;
+    margin: 0 0 6px;
     color: #9fadc2;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 16px;
   }
 
   &__value {
     color: $main-text-color;
-    line-height: 1.4;
+    font-size: 16px;
+    line-height: 22px;
     text-decoration: none;
     transition:
       color 0.3s,

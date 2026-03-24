@@ -2,18 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 16px;
+  padding-top: 14px;
+  padding-inline: 0;
 
   @media (min-width: $tablet-min-width) {
     padding-top: 24px;
+    padding-inline: 0;
   }
 
   @media (min-width: $desktop-min-width) {
     padding-top: 24px;
+    padding-inline: 0;
   }
 
   &__logo {
     display: block;
+    margin-left: -14px;
+
+    @media (min-width: $tablet-min-width) {
+      margin-left: -20px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      margin-left: -28px;
+    }
   }
 
   &__logo-image {
@@ -29,6 +41,6 @@
   &__icons {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 14px;
   }
 }

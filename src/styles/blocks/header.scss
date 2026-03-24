@@ -5,27 +5,45 @@
   background-position: center;
   background-size: cover;
 
-  &__content {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    min-height: calc(100vh - 72px);
-    padding-bottom: 88px;
+  .container {
+    width: 100%;
+    max-width: 1260px;
+    margin: 0 auto;
+    padding-inline: 20px;
 
     @media (min-width: $tablet-min-width) {
-      min-height: calc(100vh - 96px);
+      padding-inline: 36px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      padding-inline: 72px;
+    }
+  }
+
+  &__content {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 36px;
+    padding-bottom: 80px;
+
+    @media (min-width: $tablet-min-width) {
       padding-bottom: 130px;
+    }
+
+    @media (min-width: $desktop-min-width) {
+      padding-bottom: 200px;
     }
   }
 
   &__title {
     margin: 0;
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: -1.5px;
     text-align: center;
-    color: $main-text-color;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -1.5px;
 
     @media (min-width: $tablet-min-width) {
       font-size: 64px;
