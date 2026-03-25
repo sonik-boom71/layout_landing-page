@@ -3,13 +3,14 @@
   bottom: 0;
   z-index: -1;
   height: 200px;
-  margin-top: 0;
+  margin-top: -32px;
   background-image: url('../images/footer-cyclists.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center top;
 
   @media (min-width: $tablet-min-width) {
     height: 480px;
+    margin-top: -40px;
   }
 
   @media (min-width: $desktop-min-width) {

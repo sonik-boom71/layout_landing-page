@@ -5,21 +5,6 @@
   background-position: center;
   background-size: cover;
 
-  .container {
-    width: 100%;
-    max-width: 1260px;
-    margin: 0 auto;
-    padding-inline: 20px;
-
-    @media (min-width: $tablet-min-width) {
-      padding-inline: 36px;
-    }
-
-    @media (min-width: $desktop-min-width) {
-      padding-inline: 72px;
-    }
-  }
-
   &__content {
     min-height: 100vh;
     display: flex;
