@@ -1,17 +1,19 @@
 .contacts {
-  padding-top: 140px;
-  padding-bottom: 0;
+  padding-top: 0;
+  padding-bottom: -120px;
 
   @media (min-width: $tablet-min-width) {
-    padding-top: 360px;
+    padding-top: 120px;
   }
 
   &__title {
-    margin-bottom: 32px;
+    margin-top: 80px;
+    margin-bottom: 140px;
     text-align: center;
   }
 
   &__content {
+    margin-bottom: -270px;
     display: grid;
     gap: 32px;
 
@@ -22,14 +24,14 @@
 
       @media (min-width: $desktop-min-width) {
         grid-template-columns: 460px minmax(0, 1fr);
-        column-gap: 120px;
+        column-gap: 160px;
       }
     }
   }
 
   &__form {
     display: grid;
-    gap: 12px;
+    gap: 13px;
   }
 
   &__input,
@@ -84,6 +86,7 @@
     width: 100%;
     margin-top: 4px;
   }
+
 
   &__info {
     display: grid;

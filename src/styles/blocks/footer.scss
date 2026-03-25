@@ -1,5 +1,5 @@
 .footer {
-  position: sticky;
+  position: sticky;;
   bottom: 0;
   z-index: -1;
   height: 200px;
@@ -8,12 +8,17 @@
   background-size: cover;
   background-position: center top;
 
+  padding-bottom: 80px;
   @media (min-width: $tablet-min-width) {
+    padding-bottom: 220px;
     height: 480px;
     margin-top: -40px;
   }
 
   @media (min-width: $desktop-min-width) {
+    padding-bottom: 0;
     height: 555px;
+    margin-top: -120px;
+    
   }
 }
