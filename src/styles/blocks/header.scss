@@ -13,9 +13,10 @@
     padding-top: 400px;
     padding-bottom: 80px;
 
-    @media (min-width: $tablet-min-width) {
-      padding-bottom: 130px;
-    }
+    @media (max-width: 560px) {
+    padding-top: 200px;
+      padding-bottom: 400px;
+}
 
     @media (min-width: $desktop-min-width) {
       padding-bottom: 200px;
